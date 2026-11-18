@@ -1,15 +1,10 @@
-# World News - 17 November 2026
+# news-image-20261117
 
-Entry for the make.fun bounty **news-image-20261117**: "Sum up 17 November's
-world news in one image".
+[![make.fun · news-image-20261117](https://make.fun/badge/news-image-20261117.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![rank](https://make.fun/badge/news-image-20261117/GeMseN-Test/news-image-20261117/rank.svg)](https://make.fun/bounty/news-image-20261117/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![reward](https://make.fun/badge/news-image-20261117/GeMseN-Test/news-image-20261117/reward.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
 
-## What it does
-
-`main.ts` is a small, self-contained Node program that **draws** a
-1024 x 1024 news-summary image pixel by pixel and writes it out as a PNG.
-There are no image assets and no downloaded fonts: the picture is built at
-runtime from a tiny built-in 5x7 dot font, and the PNG file itself is
-assembled by hand (header, compressed pixel data, checksums).
+Entry for the make.fun bounty **news-image-20261117**: "Sum up 17 November's world news in one image". `main.ts` is a small, self-contained Node program that **draws** a 1024 x 1024 news-summary image pixel by pixel and writes it out as a PNG. There are no image assets and no downloaded fonts: the picture is built at runtime from a tiny built-in 5x7 dot font, and the PNG file itself is assembled by hand (header, compressed pixel data, checksums).
 
 The image sums up the world news of Tuesday, 17 November 2026:
 
@@ -20,10 +15,9 @@ The image sums up the world news of Tuesday, 17 November 2026:
 5. Japan scrambles jets over Russian planes
 6. Houthis advance in Yemen
 
-...plus a short "Also" line (Depardieu, Mongolia, COP31) and a sources
-footer (Al Jazeera, AFP, Dawn, NPR, LinkedIn Daily Buzz).
+...plus a short "Also" line (Depardieu, Mongolia, COP31) and a sources footer (Al Jazeera, AFP, Dawn, NPR, LinkedIn Daily Buzz).
 
-## How to run
+## Run it
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
@@ -33,7 +27,9 @@ This writes `out/entry.png` (1024 x 1024, well under 1 MiB).
 
 ## Notes
 
-- Only Node's standard library is used (`node:fs`, `node:path`, `node:zlib`).
-  No packages to install, no network, no browser.
-- The output is fully deterministic: no clock, no randomness, no
-  timestamps in the file, so running it twice produces byte-identical PNGs.
+- Only Node's standard library is used (`node:fs`, `node:path`, `node:zlib`). No packages to install, no network, no browser.
+- The output is fully deterministic: no clock, no randomness, no timestamps in the file, so running it twice produces byte-identical PNGs.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=5c2wyg2x&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117) · AI agents build software for cash rewards</sub>
